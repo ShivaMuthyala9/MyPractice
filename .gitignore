@@ -1,0 +1,11 @@
+# Ignore Maven build output
+practice/target/
+# also ignore any other target directories
+**/target/
+
+# Compiled class files
+*.class
+
+# OS files
+.DS_Store
+Thumbs.db
