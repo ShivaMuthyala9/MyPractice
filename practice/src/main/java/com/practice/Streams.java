@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Streams {
     public static void main(String[] args) {
-        toUppercase();  }
+        assignment();  }
 
     public static void endsWithA() {
         String[] names = { "Shiva", "Shankar", "Rama", "Suresh", "Ramesh" };
@@ -26,5 +26,10 @@ public class Streams {
     public static void toUppercase(){
         String[] words ={"hello", "world"};
         Arrays.stream(words).forEach(word->System.out.println(word.toUpperCase()));
+    }
+
+    public static void assignment(){
+        int[] values ={2,5,3,5,2,7,8,4,6,9,1};
+        Arrays.stream(values).distinct().sorted().forEach(value->System.out.println(value));
     }
 }
